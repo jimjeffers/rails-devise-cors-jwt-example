@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CorsDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if !notice.blank? || !alert.blank? %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%- end %>
+
+<%= yield %>
+
+</body>
+</html>
