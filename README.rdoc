@@ -1,3 +1,6 @@
 == README
 
 A simple example of configuring CORS and overriding Devise to pass a JWT when authenticating remotely via JSON.
+
+You can view a screencast explaining this in detail here:
+https://www.youtube.com/watch?v=_CAq-F2icp4
