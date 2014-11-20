@@ -28,7 +28,7 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     # The default behavior would have been to simply fire respond_with:
-    # respond_with resource
+    # respond_with resource, location: after_sign_in_path_for(resource)
   end
 
 end
