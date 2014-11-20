@@ -19,17 +19,5 @@ gem 'spring',      group: :development
 
 # Authentication
 gem 'devise'
-gem 'jwt'
+gem 'jwt', '1.1', git: 'https://github.com/progrium/ruby-jwt.git' # V1.1 supports 'exp' and is not released on RubyGems yet.
 gem 'rack-cors'
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]

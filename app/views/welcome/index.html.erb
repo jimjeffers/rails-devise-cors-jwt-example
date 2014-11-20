@@ -1,2 +1,6 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<% if current_user.blank? %>
+<%= link_to "Login", new_user_session_path %>
+<% end %>

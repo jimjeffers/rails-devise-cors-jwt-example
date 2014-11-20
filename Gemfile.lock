@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/progrium/ruby-jwt.git
+  revision: 8d74770c6cd92ea234b428b5d0c1f18306a4f41c
+  specs:
+    jwt (1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,7 +51,6 @@ GEM
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     json (1.8.1)
-    jwt (1.0.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
@@ -113,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   devise
   jbuilder (~> 2.0)
-  jwt
+  jwt (= 1.1)!
   pg
   rack-cors
   rails (= 4.1.8)
