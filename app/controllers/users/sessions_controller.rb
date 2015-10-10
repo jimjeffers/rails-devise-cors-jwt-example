@@ -23,7 +23,7 @@ class Users::SessionsController < Devise::SessionsController
     # Here we're deviating from the standard behavior by issuing our JWT
     # to any JS based client.
     token = AuthToken.issue_token({ user_id: resource.id })
-    respond_with resource, location: after_sign_in_path_for(resource) do |format|
+    respond_to do |format|
       format.json { render json: {user: resource.email, token: token} }
     end
 

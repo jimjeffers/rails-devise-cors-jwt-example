@@ -4,3 +4,21 @@ A simple example of configuring CORS and overriding Devise to pass a JWT when au
 
 You can view a screencast explaining this in detail here:
 https://www.youtube.com/watch?v=_CAq-F2icp4
+
+Here is an example of a post request to create an account:
+
+```
+curl -H "Content-Type: application/json" \
+     -X POST \
+     -d '{"user":{"email":"test@example.com","password":"12345678","password_confirm":"12345678"}}' \
+     http://localhost:3000/users.json
+```
+
+And to authenticate:
+
+```
+curl -H "Content-Type: application/json" \
+      -X POST \
+      -d '{"user": {"email":"test@example.com","password":"12345678"}}' \
+      http://localhost:3000/users/sign_in
+```
