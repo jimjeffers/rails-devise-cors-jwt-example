@@ -17,4 +17,4 @@ And to authenticate:
   curl -H "Content-Type: application/json" \
         -X POST \
         -d '{"user": {"email":"test@example.com","password":"12345678"}}' \
-        http://localhost:3000/users/sign_in
+        http://localhost:3000/users/sign_in.json
